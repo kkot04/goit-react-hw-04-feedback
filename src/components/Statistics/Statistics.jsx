@@ -11,7 +11,7 @@ export const Statistics = ({ good, neutral, bad, total, positive }) => {
         <p className={s.text}>Total: {total}</p>
         <p className={s.text}>
           Positive feedback:
-          {positive.toFixed()}%
+          {positive(good, bad, neutral)}%
         </p>
         </div>
         </>
